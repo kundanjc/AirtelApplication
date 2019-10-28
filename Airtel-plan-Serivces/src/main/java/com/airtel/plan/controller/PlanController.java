@@ -24,4 +24,9 @@ public class PlanController {
     public List<Plans> getAllNotes() {
         return  planService.getAllplans();
     }
+    
+    @GetMapping("/hello")
+    public String getMessgae() {
+        return  "Hello Kundan";
+    }
 }
